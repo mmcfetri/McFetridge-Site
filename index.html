@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>McFetridge & Co</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #1a2755;
+      --cream: #f8f6f1;
+      --gold: #c9a96e;
+    }
+
+    body {
+      background-color: var(--cream);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Montserrat', sans-serif;
+      color: var(--navy);
+      padding: 40px 20px;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 1.2s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    .logo {
+      width: 320px;
+      max-width: 90vw;
+      margin-bottom: 48px;
+    }
+
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: var(--gold);
+      margin: 0 auto 36px;
+    }
+
+    .message {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.1rem, 3vw, 1.4rem);
+      font-weight: 300;
+      color: var(--navy);
+      letter-spacing: 0.02em;
+      line-height: 1.7;
+      max-width: 480px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="logo" src="Printable_Resolution_File.jpg" alt="McFetridge & Co">
+    <div class="divider"></div>
+    <p class="message">McFetridge &amp; Co's website is currently under construction.<br>Please check back later.</p>
+  </div>
+</body>
+</html>
