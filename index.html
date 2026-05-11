@@ -1,3 +1,6 @@
+Here it is — copy everything between the triple backticks:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,7 +52,6 @@
       z-index: 10;
     }
 
-    /* LANGUAGE BAR */
     .lang-bar {
       background: var(--navy-deep);
       display: flex;
@@ -87,7 +89,6 @@
     .lang-btn:hover { color: var(--gold-light); }
     .lang-btn.active { color: var(--gold-light); border-color: rgba(212,170,114,0.35); }
 
-    /* HEADER */
     header {
       background: var(--navy);
       padding: 52px 40px 0;
@@ -174,7 +175,6 @@
     nav button:hover { color: var(--cream); }
     nav button.active { color: var(--gold-light); border-bottom-color: var(--gold-light); }
 
-    /* MAIN */
     main {
       max-width: 860px;
       margin: 0 auto;
@@ -191,7 +191,6 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    /* TYPOGRAPHY */
     .eyebrow {
       font-family: 'Jost', sans-serif;
       font-size: 0.62rem;
@@ -253,7 +252,6 @@
       line-height: 1.7;
     }
 
-    /* SECTION DIVIDER */
     .section-divider {
       display: flex;
       align-items: center;
@@ -261,11 +259,7 @@
       margin: 64px 0 48px;
     }
 
-    .section-divider-line {
-      flex: 1;
-      height: 1px;
-      background: var(--border-navy);
-    }
+    .section-divider-line { flex: 1; height: 1px; background: var(--border-navy); }
 
     .section-divider-label {
       font-family: 'Jost', sans-serif;
@@ -276,7 +270,6 @@
       white-space: nowrap;
     }
 
-    /* SERVICES */
     .services-intro { margin-bottom: 44px; }
 
     .services-grid {
@@ -327,7 +320,6 @@
       padding-bottom: 2px;
     }
 
-    /* CLIENTS */
     .clients-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -367,7 +359,6 @@
 
     .client-card:hover .client-logo-placeholder img { filter: grayscale(0%); }
 
-    /* Logo placeholder text for when images aren't loaded */
     .logo-text {
       font-family: 'Playfair Display', serif;
       font-size: 1.1rem;
@@ -377,7 +368,6 @@
       letter-spacing: 0.04em;
     }
 
-    /* PARTNERS */
     .partner-card {
       display: grid;
       grid-template-columns: 200px 1fr;
@@ -422,7 +412,6 @@
       padding: 36px 40px;
       border-left: 3px solid transparent;
       transition: border-color 0.3s;
-      position: relative;
     }
 
     .partner-card:hover .partner-content-col { border-left-color: var(--gold); }
@@ -445,12 +434,7 @@
       margin-bottom: 16px;
     }
 
-    .partner-content-col p {
-      font-size: 1.05rem;
-      line-height: 1.8;
-      color: var(--text-mid);
-      margin-bottom: 0;
-    }
+    .partner-content-col p { font-size: 1.05rem; line-height: 1.8; color: var(--text-mid); margin-bottom: 0; }
 
     .partner-link {
       display: inline-block;
@@ -468,9 +452,7 @@
 
     .partner-link:hover { color: var(--gold); }
 
-    /* BLOG */
     .blog-intro { margin-bottom: 44px; }
-
     .blog-links { display: flex; flex-direction: column; gap: 2px; background: var(--border-navy); }
 
     .blog-link {
@@ -519,7 +501,6 @@
     .blog-arrow { color: var(--gold); font-size: 1.4rem; font-family: 'Playfair Display', serif; transition: transform 0.25s; }
     .blog-link:hover .blog-arrow { transform: translateX(5px); }
 
-    /* CONTACT */
     .contact-wrap { max-width: 580px; }
 
     .contact-email-block {
@@ -568,7 +549,6 @@
       z-index: 1;
     }
 
-    /* FOOTER */
     footer {
       position: relative;
       z-index: 5;
@@ -636,7 +616,6 @@
 
 <main>
 
-  <!-- ABOUT -->
   <div id="about" class="tab-panel active">
     <span class="eyebrow" data-key="about_eyebrow"></span>
     <h2 data-key="about_h2"></h2>
@@ -647,7 +626,6 @@
     <p data-key="about_p3"></p>
   </div>
 
-  <!-- SERVICES -->
   <div id="services" class="tab-panel">
     <span class="eyebrow" data-key="services_eyebrow"></span>
     <h2 data-key="services_h2"></h2>
@@ -661,8 +639,6 @@
       <div class="service-card"><div class="service-number">05</div><h3 data-key="s5_title"></h3><p data-key="s5_desc"></p><span class="service-tag" data-key="s5_tag"></span></div>
       <div class="service-card"><div class="service-number">06</div><h3 data-key="s6_title"></h3><p data-key="s6_desc"></p><span class="service-tag" data-key="s6_tag"></span></div>
     </div>
-
-    <!-- CLIENTS -->
     <div class="section-divider">
       <div class="section-divider-line"></div>
       <span class="section-divider-label" data-key="clients_label"></span>
@@ -672,14 +648,12 @@
     <div class="clients-grid">
       <div class="client-card">
         <div class="client-logo-placeholder">
-          <!-- Replace src with kris-logo.png once uploaded -->
           <img src="kris-logo.png" alt="KRIS" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
           <span class="logo-text" style="display:none;">KRIS</span>
         </div>
       </div>
       <div class="client-card">
         <div class="client-logo-placeholder">
-          <!-- Replace src with franz-haas-logo.png once uploaded -->
           <img src="franz-haas-logo.png" alt="Franz Haas" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
           <span class="logo-text" style="display:none;">Franz Haas</span>
         </div>
@@ -687,14 +661,12 @@
     </div>
   </div>
 
-  <!-- PARTNERS -->
   <div id="partners" class="tab-panel">
     <span class="eyebrow" data-key="partners_eyebrow"></span>
     <h2 data-key="partners_h2"></h2>
     <div class="ornament"><div class="orn-line"></div><div class="orn-dot"></div></div>
     <p data-key="partners_intro"></p>
 
-    <!-- FLX International -->
     <div class="partner-card" style="margin-top: 44px;">
       <div class="partner-logo-col">
         <img src="flx-logo.png" alt="FLX International" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
@@ -708,7 +680,6 @@
       </div>
     </div>
 
-    <!-- Sip Happens -->
     <div class="partner-card">
       <div class="partner-logo-col">
         <img src="sip-happens-logo.png" alt="Sip Happens" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
@@ -722,7 +693,6 @@
       </div>
     </div>
 
-    <!-- Insights from Asia -->
     <div class="partner-card">
       <div class="partner-logo-col">
         <img src="ifa-logo.png" alt="Insights from Asia" onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
@@ -737,7 +707,6 @@
     </div>
   </div>
 
-  <!-- JOURNAL -->
   <div id="blog" class="tab-panel">
     <span class="eyebrow" data-key="blog_eyebrow"></span>
     <h2 data-key="blog_h2"></h2>
@@ -757,7 +726,6 @@
     </div>
   </div>
 
-  <!-- CONTACT -->
   <div id="contact" class="tab-panel">
     <span class="eyebrow" data-key="contact_eyebrow"></span>
     <h2 data-key="contact_h2"></h2>
@@ -966,3 +934,4 @@
 
 </body>
 </html>
+```
